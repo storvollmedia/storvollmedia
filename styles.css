@@ -1,0 +1,224 @@
+@import "~@fontsource/roboto/index.css";
+
+/* Body */
+body {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    height: 100%;
+}
+
+/* Links */
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.navbarknapper {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+/* Container 1 */
+.container1 {
+    padding-left: 100px;
+    height: calc(95vh - 40px);
+    align-items: center;
+    display: flex;
+}
+
+.forside-tekst{
+    padding-bottom: 80px;
+}
+
+.tittel {
+    font-size: 50px;
+}
+
+.bilde-forside {
+    filter: brightness(50%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Galleri */
+.galleri {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+.bilder-4 {
+    width: 100%;
+}
+
+.bilder-4-bilde {
+    height: 200px;
+    width: 23%;
+    object-fit: cover;
+}
+
+.jegharyoutube {
+    margin-top: 100px;
+}
+
+/* YouTube Button */
+.youtubeknapp {
+    background-color: #FF0000;
+}
+
+/* Container 2 */
+.container2 {
+    text-align: center;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: white;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+/* Services */
+.tjenester {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tjeneste {
+    width: 30%;
+    text-align: left;
+    padding: 1%;
+    background-color: black;
+    color: white;
+}
+
+.tjenestebilde {
+    width: 100%;
+}
+
+/* Kontakt */
+.kontakt {
+    text-align: center;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #000000;
+}
+
+.kontaktinfo {
+    text-align: left;
+}
+
+/* Container 4 */
+.container4 {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container4 a {
+    color: black;
+}
+
+/* About Section */
+.om-tekst {
+    width: 45%;
+}
+
+.om-bilde {
+    width: 45%;
+    object-fit: cover;
+}
+
+/* Knapper */
+.svart-knapp a {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    padding: 20px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.svart-knapp a:hover {
+    background-color: rgb(230, 230, 230);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.hvit-knapp a {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-top: 25px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.hvit-knapp a:hover {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    cursor: pointer;
+}
+
+.rod-knapp a {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.rod-knapp a:hover {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    cursor: pointer;
+}
