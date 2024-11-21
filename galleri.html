@@ -1,210 +1,45 @@
-/* Body */
-body {
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    background-color: #000000;
-    margin: 0;
-    height: 100%;
-    overflow-x: hidden;
-}
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleri</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html" class="logo">STORVOLL MEDIA</a>
+      <a href="https://youtube.com/@storvollmedia"><img src="ytlogo.png" alt="youtube knapp"></a>
+    </div>
 
-/* Navbar */
-.navbar {
-    background-color: rgba(0, 0, 0, 0.75);
-    top: 0;
-    z-index: 2;
-    padding: 4%;
-    position: sticky;
-    backdrop-filter: blur(10px);
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.logo {
-    text-decoration: none;
-    font-weight: 1000;
-    font-size: 150%;
-    align-self: center;
-}
-
-/* Links */
-a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.active {
-    text-decoration: underline;
-}
-
-/* Container 1 */
-.container1 {
-    width: 90%;
-    padding-left: 5%;
-    height: calc(100vh - 30px);
-    align-items: center;
-    display: flex;
-}
-
-.forside-tekst {
-    padding-bottom: 80px;
-}
-
-.tittel {
-    font-size: 34px;
-}
-
-.bilde-forside {
-    filter: brightness(50%);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-/* Galleri */
-.galleri {
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    background-color: black;
-}
-
-.bilder-4 {
-    width: 100%;
-    margin-bottom: 10%;
-}
-
-.bilder-4-bilde {
-    height: 200px;
-    width: 49%;
-    object-fit: cover;
-}
-
-.jegharyoutube {
-    margin-top: 20%;
-}
-
-/* Container 2 */
-.container2 {
-    text-align: center;
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: white;
-    color: black;
-    padding-top: 10%;
-    padding-bottom: 5%;
-}
-
-.tjeneste {
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: left;
-    padding: 1%;
-    background-color: black;
-    color: white;
-}
-
-.tjenestebilde {
-    width: 100%;
-}
-
-/* Kontakt */
-.kontakt {
-    text-align: left;
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #000000;
-}
-
-.kontaktkort {
-    background-color: white;
-    color: black;
-    padding: 5px 15px;
-    width: 50%;
-}
-
-/* Container 4 */
-.container4 { 
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: black;
-    background-color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.container4 a {
-    color: black;
-}
-
-/* About Section */
-.container5 {
-    text-align: center;
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: black;
-    color: white;
-}
-
-.om-tekst {
-    width: 100%;
-}
-
-.om-bilde {
-    width: 100%;
-    object-fit: cover;
-}
-
-.galleri-bilder {
-    justify-items: flex;
-    margin-bottom: 20px;
-}
-
-.galleri-bilder img {
-    max-width: 49%;
-    transition: transform 2.5s;
-}
-
-.galleri-bilder img:hover {
-    transition: transform 1s;
-    transform: scale(1.25);
-}
-
-/* Knapper */
-.svart-knapp,
-.hvit-knapp,
-.rod-knapp {
-    transition: background-color 1s, color 1s, transform 1s;
-    padding: 20px;
-    font-weight: 800;
-    font-size: 100%;
-    justify-content: space-around;
-    border: none;
-    margin-left: 5px;
-}
-
-.svart-knapp {
-    background-color: black;
-    color: white;
-}
-
-.svart-knapp:hover {
-    background-color: rgb(36, 36, 36);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
+    <div class="container5">
+      <H1>GALLERI</H1>
+      <p>Her er noen bilder jeg har tatt.</p>
+      <p>Håper de faller i smak :)</p>
+      <div class="galleri-bilder">
+        <img src="bil.jpg" alt="En naturskjønn utsikt av en bil">
+        <img src="fugltre.jpg" alt="Et vakkert fugletre">
+        <img src="gulblomst.jpg" alt="En livlig gul blomst">
+        <img src="fjell.jpg" alt="Et majestetisk fjellandskap">
+        <img src="himmelv.jpg" alt="En klar blå himmel med skyer">
+        <img src="klokke.jpg" alt="En stilfull klokke på en vegg">
+        <img src="katt2.jpg" alt="En søt katt som sitter">
+        <img src="sloreffekt1.jpg" alt="En visuell fremstilling av en sløreeffekt">
+        <img src="stra.jpg" alt="En fredelig elv som renner gjennom naturen">
+        <img src="telefonfoss.jpg" alt="Et fossefall med en telefonkiosk i nærheten">
+        <img src="fart.jpg" alt="Et dynamisk bilde som representerer fart">
+        <img src="hund.jpg" alt="En vennlig hund som leker ute">
+        <img src="katt1.jpg" alt="En leken kattunge som utforsker omgivelsene">
+        <img src="katt3.jpg" alt="En fluffy katt som slapper av komfortabelt">
+        <img src="kule.jpg" alt="En speilreflekterende kule i en blomsterhage">
+        <img src="sloreffekt2.jpg" alt="En annen visuell fremstilling av en sløreeffekt">
+        <img src="varde.jpg" alt="En naturskjønn utsikt av en fjelltopp">
+        <img src="math.jpg" alt="Matematiske ligninger på en tavle">  
+      </div>
+      <a href="index.html">
+        <button class="hvit-knapp">TILBAKE</button>
+      </a>
+    </div>
+    <p></p>
+  </body>
+</html>
