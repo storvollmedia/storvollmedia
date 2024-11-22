@@ -2,9 +2,9 @@
 
 /* Body */
 body {
-    color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
-    background-color: #000000;
+    color: #d8dee9;
+    background-color: #2e3440;
     margin: 0;
     height: 100%;
     overflow-x: hidden;
@@ -22,10 +22,13 @@ a {
 }
 
 /* Navbar */
+.navbar-whitespace{
+    padding: 1vh;
+}
+
 .navbar {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(46, 52, 64, 0.75);
     top: 0;
-    z-index: 2;
     padding: 4%;
     position: relative;
     backdrop-filter: blur(10px);
@@ -34,10 +37,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: #FFF solid 1px;
+    border-radius: 1vh;
 }
 
 .navbar img {
     height: 2.5vh;
+    z-index: 2;
 }
 
 .logo {
@@ -60,7 +66,8 @@ a {
 }
 
 .forside-tekst {
-    padding-bottom: 15vh;
+    padding-bottom: 5vh;
+    margin-bottom: 12vh;
     display: flex;
     flex-direction: column;
 }
@@ -75,7 +82,7 @@ a {
 }
 
 .bilde-forside {
-    filter: brightness(50%);
+    filter: brightness(33%);
     position: fixed;
     top: 0;
     left: 0;
@@ -92,7 +99,7 @@ a {
     padding-right: 2.5%;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    background-color: black;
+    background-color: #2e3440;
     display: flex;
     flex-direction: column;
 }
@@ -129,7 +136,7 @@ a {
     padding-left: 2.5%;
     padding-right: 2.5%;
     background-color: white;
-    color: black;
+    color: #2e3440;
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
@@ -139,7 +146,7 @@ a {
     margin-bottom: 10px;
     text-align: left;
     padding: 0%;
-    background-color: black;
+    background-color: #2e3440;
     color: white;
 }
 
@@ -161,7 +168,7 @@ a {
     padding-right: 2.5%;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    background-color: #000000;
+    background-color: #2e3440;
 }
 
 .kontaktinfo {
@@ -179,7 +186,7 @@ a {
     width: 95%;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    color: black;
+    color: #2e3440;
     background-color: white;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -210,7 +217,7 @@ a {
     width: 95%;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    background-color: black;
+    background-color: #2e3440;
     color: white;
     margin-bottom: 5vh;
     display: flex;
@@ -229,20 +236,14 @@ a {
 
 .galleri-bilder img {
     max-width: 49%;
-    transition: transform 2.5s;
-}
-
-.galleri-bilder img:hover {
-    transition: transform 1s;
-    transform: scale(1.25);
 }
 
 
 /* Knapper */
 .hvit-knapp {
     transition: background-color 1s, transform 1s;
-    background-color: #FFF;
-    color: #000;
+    background-color: #a3be8c;
+    color: #2e3440;
     padding: 2vh;
     font-weight: 800;
     font-size: 100%;
@@ -252,14 +253,14 @@ a {
 
 .hvit-knapp:hover {
     transition: background-color 1s, transform 1s;
-    background-color: rgb(181, 181, 181);
+    background-color: #ebcb8b;
     transform: scale(1.05);
 }
 
 .svart-knapp {
     transition: background-color 1s, transform 1s;
-    background-color: #000;
-    color: #FFF;
+    background-color: #5e81ac;
+    color: #d8dee9;
     padding: 2vh;
     font-weight: 800;
     font-size: 100%;
@@ -269,14 +270,14 @@ a {
 
 .svart-knapp:hover {
     transition: background-color 1s, transform 1s;
-    background-color: rgb(36, 36, 36);
+    background-color: #88c0d0;
     transform: scale(1.05);
 }
 
 .rod-knapp {
     transition: background-color 1s, transform 1s;
-    background-color: #F00;
-    color: #FFF;
+    background-color: #bf616a;
+    color: #d8dee9;
     padding: 2vh;
     font-weight: 800;
     font-size: 100%;
@@ -286,20 +287,53 @@ a {
 
 .rod-knapp:hover {
     transition: background-color 1s, transform 1s;
-    background-color: rgb(36, 36, 36);
+    background-color: #d08770;
     transform: scale(1.05);
 }
 
 
 @media (min-width: 769px) {
-    /* Navbar */
-.navbar {
-    padding: 2%;
+
+.navbar-whitespace{
+    padding: 3vh;
     position: sticky;
+    top: 0;
+}
+
+.navbar {
+    padding: 2vh;
+    backdrop-filter: blur(10px);
+    border-radius: 2.5vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.odyseelogo{
+    height: 100%;
+}
+
+.odyseelogo img{
+    transition: transform 3s;
+    object-fit: scale-down;
+}
+
+.odyseelogo img:hover {
+    transition: transform 1s;
+    transform: rotate(360deg);
 }
 
 .logo {
     font-size: 200%;
+}
+
+.forside{
+    height: calc(87vh);
+    margin-bottom: 0vh;
+}
+
+.forside-tekst {
+    padding-bottom: 20vh;
+    margin-bottom: 0vh;
 }
 
 .forside-tekst a{
@@ -361,21 +395,21 @@ a {
 }
 
 .tjeneste {
-    transition: scale 0.5s, border 0.5s;
     margin: 0.5%;
     max-height: 60vh;
     max-width: 49%;
     box-sizing: border-box;
 }
 
-.tjeneste:hover {
-    scale: 1.01;
-    border: #333 1px solid;
-}
-
 .tjenestebilde {
+    transition: transform 1s;
     height: 60%;
     object-fit: cover;
+}
+
+.tjenestebilde:hover {
+    transition: transform 1s;
+    transform: rotate(1deg);
 }
 
 /* Kontakt */
@@ -429,6 +463,13 @@ a {
     align-self: flex-start;
 }
 
+.galleri-bilder{
+transition: transform 2.5s;
+}
+
+.galleri-bilder img:hover {
+    transition: transform 1s;
+    transform: scale(1.25);
 }
 
 }
